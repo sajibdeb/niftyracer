@@ -1,0 +1,478 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #0a0a1a 0%, #1a0a2e 50%, #0a1a2e 100%);
+  min-height: 100vh;
+  color: white;
+}
+
+/* Neon effects */
+.neon-text {
+  text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 40px currentColor;
+}
+
+.neon-cyan {
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+.neon-pink {
+  color: #f0f;
+  text-shadow: 0 0 10px #f0f, 0 0 20px #f0f;
+}
+
+.neon-green {
+  color: #0f0;
+  text-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
+}
+
+.neon-yellow {
+  color: #ff0;
+  text-shadow: 0 0 10px #ff0, 0 0 20px #ff0;
+}
+
+.neon-border {
+  border: 2px solid #0ff;
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, inset 0 0 10px rgba(0, 255, 255, 0.1);
+}
+
+.neon-card {
+  background: rgba(10, 10, 30, 0.9);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+/* Buttons */
+.neon-btn {
+  @apply px-6 py-3 font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px solid #0ff;
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff;
+  box-shadow: 0 0 10px #0ff;
+}
+
+.neon-btn:hover:not(:disabled) {
+  background: #0ff;
+  color: #000;
+  box-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+  text-shadow: none;
+}
+
+.neon-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.neon-btn-pink {
+  @apply px-6 py-3 font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px solid #f0f;
+  color: #f0f;
+  text-shadow: 0 0 10px #f0f;
+  box-shadow: 0 0 10px #f0f;
+}
+
+.neon-btn-pink:hover:not(:disabled) {
+  background: #f0f;
+  color: #000;
+  box-shadow: 0 0 20px #f0f, 0 0 40px #f0f;
+  text-shadow: none;
+}
+
+.neon-btn-pink:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.neon-btn-green {
+  @apply px-6 py-3 font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px solid #0f0;
+  color: #0f0;
+  text-shadow: 0 0 10px #0f0;
+  box-shadow: 0 0 10px #0f0;
+}
+
+.neon-btn-green:hover:not(:disabled) {
+  background: #0f0;
+  color: #000;
+  box-shadow: 0 0 20px #0f0, 0 0 40px #0f0;
+  text-shadow: none;
+}
+
+.neon-btn-green:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.neon-btn-yellow {
+  @apply px-6 py-3 font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px solid #ff0;
+  color: #ff0;
+  text-shadow: 0 0 10px #ff0;
+  box-shadow: 0 0 10px #ff0;
+}
+
+.neon-btn-yellow:hover:not(:disabled) {
+  background: #ff0;
+  color: #000;
+  box-shadow: 0 0 20px #ff0, 0 0 40px #ff0;
+  text-shadow: none;
+}
+
+.neon-btn-yellow:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.neon-btn-purple {
+  @apply px-6 py-3 font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px solid #a855f7;
+  color: #a855f7;
+  text-shadow: 0 0 10px #a855f7;
+  box-shadow: 0 0 10px #a855f7;
+}
+
+.neon-btn-purple:hover:not(:disabled) {
+  background: #a855f7;
+  color: #000;
+  box-shadow: 0 0 20px #a855f7, 0 0 40px #a855f7;
+  text-shadow: none;
+}
+
+.neon-btn-purple:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Game canvas */
+#gameCanvas {
+  border: 3px solid #0ff;
+  box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, inset 0 0 20px rgba(0, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0ff;
+  border-radius: 4px;
+}
+
+/* Toast notifications */
+.toast-container {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 380px;
+  pointer-events: none;
+}
+
+.toast {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 255, 255, 0.1);
+  cursor: pointer;
+  pointer-events: auto;
+  animation: toastSlideIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transform: translateX(120%);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.toast:hover {
+  transform: translateX(0) scale(1.02);
+}
+
+.toast-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.toast-message {
+  flex: 1;
+  line-height: 1.4;
+}
+
+.toast-close {
+  font-size: 18px;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+  margin-left: 8px;
+}
+
+.toast:hover .toast-close {
+  opacity: 1;
+}
+
+.toast-success {
+  background: linear-gradient(135deg, rgba(0, 40, 0, 0.95), rgba(0, 60, 20, 0.9));
+  border: 1px solid rgba(0, 255, 0, 0.5);
+}
+
+.toast-success .toast-icon {
+  background: #0f0;
+  color: #000;
+  text-shadow: none;
+}
+
+.toast-success .toast-message {
+  color: #8f8;
+}
+
+.toast-error {
+  background: linear-gradient(135deg, rgba(40, 0, 0, 0.95), rgba(60, 20, 20, 0.9));
+  border: 1px solid rgba(255, 0, 0, 0.5);
+}
+
+.toast-error .toast-icon {
+  background: #f00;
+  color: #fff;
+  text-shadow: none;
+}
+
+.toast-error .toast-message {
+  color: #f88;
+}
+
+.toast-info {
+  background: linear-gradient(135deg, rgba(0, 20, 40, 0.95), rgba(0, 40, 60, 0.9));
+  border: 1px solid rgba(0, 255, 255, 0.5);
+}
+
+.toast-info .toast-icon {
+  background: #0ff;
+  color: #000;
+  text-shadow: none;
+}
+
+.toast-info .toast-message {
+  color: #8ff;
+}
+
+@keyframes toastSlideIn {
+  from {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Glow animation for titles */
+@keyframes glow {
+
+  0%,
+  100% {
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+  }
+
+  50% {
+    text-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff, 0 0 80px #0ff;
+  }
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+/* Pulse scale animation for buttons/elements */
+@keyframes pulseScale {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse-scale {
+  animation: pulseScale 1.5s ease-in-out infinite;
+}
+
+/* Float animation */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Neon flicker effect */
+@keyframes neonFlicker {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  92% {
+    opacity: 1;
+  }
+
+  93% {
+    opacity: 0.8;
+  }
+
+  94% {
+    opacity: 1;
+  }
+
+  96% {
+    opacity: 0.9;
+  }
+
+  97% {
+    opacity: 1;
+  }
+}
+
+.animate-flicker {
+  animation: neonFlicker 4s infinite;
+}
+
+/* Game canvas */
+#gameCanvas {
+  border: 3px solid #0ff;
+  box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, inset 0 0 20px rgba(0, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+/* Desktop: Scale up the entire game container (canvas + overlays) */
+@media (min-width: 769px) {
+  .game-container {
+    transform: scale(1.2);
+    transform-origin: top center;
+  }
+}
+
+#gameCanvas:hover {
+  box-shadow:
+    0 0 25px #0ff,
+    0 0 50px rgba(0, 255, 255, 0.6),
+    0 0 80px rgba(0, 255, 255, 0.4),
+    inset 0 0 40px rgba(0, 255, 255, 0.15);
+}
+
+/* Gradient text effect */
+.gradient-text {
+  background: linear-gradient(90deg, #0ff, #f0f, #0ff);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 3s linear infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}
+
+/* Scanline effect for retro feel (optional) */
+.scanlines::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(0deg,
+      rgba(0, 0, 0, 0.1) 0px,
+      rgba(0, 0, 0, 0.1) 1px,
+      transparent 1px,
+      transparent 2px);
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+/* Better mobile button styling */
+@media (max-width: 768px) {
+
+  .neon-btn,
+  .neon-btn-green,
+  .neon-btn-pink,
+  .neon-btn-yellow,
+  .neon-btn-purple {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}

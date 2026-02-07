@@ -1,0 +1,45 @@
+{
+  "name": "neon-racer-web3",
+  "private": true,
+  "version": "1.1.1",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "compile": "npx hardhat compile",
+    "deploy:sepolia": "npx hardhat run scripts/deploy.cjs --network sepolia",
+    "deploy:base": "npx hardhat run scripts/deploy.cjs --network base",
+    "deploy:baseSepolia": "npx hardhat run scripts/deploy.cjs --network baseSepolia",
+    "verify:sepolia": "npx hardhat verify --network sepolia",
+    "verify:base": "npx hardhat verify --network base",
+    "set-uri": "node scripts/set-base-uri.cjs"
+  },
+  "dependencies": {
+    "@farcaster/miniapp-sdk": "^0.2.2",
+    "@fortawesome/fontawesome-free": "^7.1.0",
+    "@openzeppelin/contracts": "^5.4.0",
+    "@privy-io/react-auth": "^3.12.0",
+    "@tanstack/react-query": "^5.90.20",
+    "dotenv": "^16.6.1",
+    "ethers": "^6.9.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "viem": "^2.45.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.16",
+    "hardhat": "^2.28.4",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
+  }
+}

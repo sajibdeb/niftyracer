@@ -1,0 +1,24 @@
+{
+    "name": "NeonRacer Turbo",
+    "description": "High-performance racing machine with 25% token bonus. Feel the rush!",
+    "image": "ipfs://bafybeid4523qynmq4e7jmt5wfvpc34hik6qhu5vu6dswmj65dc6sayu7ie",
+    "external_url": "https://niftyracer.fun",
+    "attributes": [
+        {
+            "trait_type": "Car Type",
+            "value": "Turbo"
+        },
+        {
+            "trait_type": "token Bonus",
+            "value": "25%"
+        },
+        {
+            "trait_type": "Tradeable",
+            "value": "Yes"
+        },
+        {
+            "trait_type": "Rarity",
+            "value": "Rare"
+        }
+    ]
+}

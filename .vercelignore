@@ -1,0 +1,13 @@
+.env
+.env.example
+artifacts
+contracts
+docs
+node_modules
+scripts
+.vercel
+hardhat.config.cjs
+cache
+.gitignore
+.claude
+dist

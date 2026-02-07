@@ -1,0 +1,24 @@
+{
+    "name": "NeonRacer Legendary",
+    "description": "The ultimate racing machine with 100% token bonus. Only for champions!",
+    "image": "ipfs://bafybeidutylmnxgug2au6s7sy4siapqvhn74fqpin3vkx7dqj5dvekub3e",
+    "external_url": "https://niftyracer.fun",
+    "attributes": [
+        {
+            "trait_type": "Car Type",
+            "value": "Legendary"
+        },
+        {
+            "trait_type": "token Bonus",
+            "value": "100%"
+        },
+        {
+            "trait_type": "Tradeable",
+            "value": "Yes"
+        },
+        {
+            "trait_type": "Rarity",
+            "value": "Legendary"
+        }
+    ]
+}

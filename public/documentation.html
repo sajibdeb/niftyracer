@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - NIFTY RACER</title>
+    <link rel="icon" type="image/x-icon" href="/img/fav.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(135deg, #0a0a1a 0%, #1a0a2e 50%, #0a1a2e 100%);
+            min-height: 100vh;
+            color: white;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(0, 255, 255, 0.3);
+        }
+
+        .header img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .header h1 {
+            color: #0ff;
+            text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+            font-size: 1.8rem;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border: 2px solid #0ff;
+            color: #0ff;
+            text-decoration: none;
+            border-radius: 20px;
+            margin-left: auto;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+
+        .back-btn:hover {
+            background: #0ff;
+            color: #000;
+        }
+
+        .card {
+            background: rgba(10, 10, 30, 0.9);
+            border: 1px solid rgba(0, 255, 255, 0.3);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 1rem;
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #0ff;
+            text-shadow: 0 0 10px #0ff;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .neon-pink {
+            color: #f0f;
+            text-shadow: 0 0 10px #f0f;
+        }
+
+        .neon-green {
+            color: #0f0;
+            text-shadow: 0 0 10px #0f0;
+        }
+
+        .neon-yellow {
+            color: #ff0;
+            text-shadow: 0 0 10px #ff0;
+        }
+
+        .neon-cyan {
+            color: #0ff;
+            text-shadow: 0 0 10px #0ff;
+        }
+
+        p,
+        li {
+            color: #ccc;
+            line-height: 1.8;
+            font-size: 0.95rem;
+        }
+
+        ul,
+        ol {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        strong {
+            color: white;
+        }
+
+        .controls-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .control-box {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
+
+        .control-box h4 {
+            color: white;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .reward-box {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .reward-box h4 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="/img/logo.png" alt="NEON">
+            <h1>NIFTY RACER</h1>
+            <a href="/" class="back-btn">← Back to Game</a>
+        </div>
+
+        <div class="card">
+            <h2>📄 DOCUMENTATION <span style="font-size: 0.6em; background: linear-gradient(90deg, #0ff, #f0f); -webkit-background-clip: text; -webkit-text-fill-color: transparent; border: 1px solid #0ff; padding: 0.2rem 0.5rem; border-radius: 0.5rem; margin-left: 0.5rem;">v1.1.1</span></h2>
+
+            <section>
+                <h3 class="neon-pink">🎮 Getting Started</h3>
+                <p>Welcome to <span class="neon-cyan">NIFTY RACER</span> – a Web3-powered endless racing game on Base where you
+                    can earn <span class="neon-yellow">NiftyGold</span> tokens!</p>
+                <ol>
+                    <li><strong>Connect Wallet:</strong> Click "Connect Wallet" to connect via Privy</li>
+                    <li><strong>Get Your Car:</strong> Claim your starter car for 0.0005 ETH in the Shop</li>
+                    <li><strong>Start Racing:</strong> Navigate to Play and hit "START RACE"</li>
+                    <li><strong>Earn Rewards:</strong> Collect neons and achieve high scores</li>
+                    <li><strong>Claim Tokens:</strong> Submit your scores on-chain and earn NiftyGold rewards</li>
+                </ol>
+            </section>
+
+            <section>
+                <h3 class="neon-yellow"><img src="/img/neon.png" alt="nGOLD" style="width: 28px; height: 28px; vertical-align: middle; margin-right: 8px;">What is NiftyGold (nGOLD)?</h3>
+                <p><span class="neon-yellow">NiftyGold (nGOLD)</span> is the official <strong>in-game token</strong> of NIFTY RACER. Earn nGOLD by playing the game and submitting your scores on-chain!</p>
+
+                <div class="reward-box" style="border-left: 3px solid #ff0;">
+                    <h4 style="color: #ff0;">Token Features</h4>
+                    <ul>
+                        <li><strong>In-Game Currency:</strong> nGOLD is your reward for racing performance</li>
+                        <li><strong>Soulbound:</strong> Cannot be transferred between wallets (anti-bot protection)</li>
+                        <li><strong>Earned by Playing:</strong> Minted directly to your wallet when you submit scores</li>
+                        <li><strong>On-Chain Proof:</strong> Your nGOLD balance proves your gaming achievements</li>
+                        <li><strong>Base Network:</strong> ERC-20 token on Base blockchain</li>
+                    </ul>
+                </div>
+
+                <div class="reward-box" style="border-left: 3px solid #0f0; margin-top: 1rem;">
+                    <h4 style="color: #0f0;">Current Use Cases</h4>
+                    <ul>
+                        <li><strong>Achievement Tracking:</strong> Your lifetime nGOLD shows total gaming performance</li>
+                        <li><strong>Leaderboard Status:</strong> High earners gain recognition in the community</li>
+                        <li><strong>Player Reputation:</strong> nGOLD balance indicates dedicated players</li>
+                    </ul>
+                </div>
+
+                <div class="reward-box" style="border-left: 3px solid #f0f; margin-top: 1rem;">
+                    <h4 style="color: #f0f;">🚀 Future Possibilities</h4>
+                    <p style="margin-bottom: 0.5rem;">While nothing is guaranteed, here's what nGOLD holders may look forward to:</p>
+                    <ul>
+                        <li><strong>Airdrop Eligibility:</strong> Top nGOLD earners may receive future token airdrops</li>
+                        <li><strong>Exclusive Access:</strong> Early access to new cars, features, and game modes</li>
+                        <li><strong>Governance:</strong> Potential voting rights on game development decisions</li>
+                        <li><strong>Rewards Conversion:</strong> Future mechanisms to convert nGOLD to tradeable tokens</li>
+                        <li><strong>Partner Rewards:</strong> Collaborations with other Web3 projects</li>
+                    </ul>
+                    <p style="font-size: 0.8rem; color: #888; margin-top: 1rem; font-style: italic;">
+                        💡 Tip: The more nGOLD you earn now, the better positioned you'll be for future opportunities!
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h3 class="neon-green">🎯 Game Controls</h3>
+                <div class="controls-grid">
+                    <div class="control-box">
+                        <h4>Desktop</h4>
+                        <ul>
+                            <li>← / A - Move Left</li>
+                            <li>→ / D - Move Right</li>
+                        </ul>
+                    </div>
+                    <div class="control-box">
+                        <h4>Mobile</h4>
+                        <ul>
+                            <li>Tap Left Side - Move Left</li>
+                            <li>Tap Right Side - Move Right</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3 class="neon-yellow">⚡ Difficulty Levels</h3>
+                <p>The game progressively gets harder as your score increases:</p>
+                <div class="controls-grid" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));">
+                    <div class="control-box" style="border-left: 3px solid #0f0;">
+                        <h4 style="color: #0f0;">BEGINNER</h4>
+                        <p style="font-size: 0.8rem;">0 - 4,000 pts</p>
+                    </div>
+                    <div class="control-box" style="border-left: 3px solid #0ff;">
+                        <h4 style="color: #0ff;">EASY</h4>
+                        <p style="font-size: 0.8rem;">4,000 - 8,000 pts</p>
+                    </div>
+                    <div class="control-box" style="border-left: 3px solid #ff0;">
+                        <h4 style="color: #ff0;">MEDIUM</h4>
+                        <p style="font-size: 0.8rem;">8,000 - 13,000 pts</p>
+                    </div>
+                    <div class="control-box" style="border-left: 3px solid #f60;">
+                        <h4 style="color: #f60;">HARD</h4>
+                        <p style="font-size: 0.8rem;">13,000 - 21,000 pts</p>
+                    </div>
+                    <div class="control-box" style="border-left: 3px solid #f0f;">
+                        <h4 style="color: #f0f;">EXTREME</h4>
+                        <p style="font-size: 0.8rem;">21,000+ pts</p>
+                    </div>
+                </div>
+                <p style="margin-top: 1rem; font-size: 0.85rem; color: #888;">
+                    Higher difficulty = faster speeds, more obstacles, and fewer power-ups!
+                </p>
+            </section>
+
+            <section>
+                <h3 class="neon-pink">📱 Farcaster Mini App</h3>
+                <p>NIFTY RACER works as a <span class="neon-cyan">Farcaster Mini App</span> and <span class="neon-cyan">Base App</span>!</p>
+                <div class="reward-box" style="border-left: 3px solid #a855f7;">
+                    <h4 style="color: #a855f7;">Play Anywhere</h4>
+                    <ul>
+                        <li><strong>Warpcast:</strong> Play directly inside the Warpcast app</li>
+                        <li><strong>Base App:</strong> Launch from the Base mobile app</li>
+                        <li><strong>Browser:</strong> Play at niftyracer.fun on any device</li>
+                    </ul>
+                </div>
+                <div class="reward-box" style="border-left: 3px solid #0ff; margin-top: 1rem;">
+                    <h4 style="color: #0ff;">Seamless Integration</h4>
+                    <ul>
+                        <li><strong>Auto-Detection:</strong> Game detects your platform automatically</li>
+                        <li><strong>Native Wallet:</strong> Uses your Farcaster/Base wallet</li>
+                        <li><strong>Share to Feed:</strong> Share scores directly to Farcaster</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h3 class="neon-green">🔗 Share Your Score</h3>
+                <p>After each game, share your achievements with friends!</p>
+                <div class="controls-grid">
+                    <div class="control-box" style="border-left: 3px solid #a855f7;">
+                        <h4 style="color: #a855f7;">Farcaster</h4>
+                        <p style="font-size: 0.85rem;">Cast your score to your followers</p>
+                    </div>
+                    <div class="control-box" style="border-left: 3px solid #1d9bf0;">
+                        <h4 style="color: #1d9bf0;">Twitter / X</h4>
+                        <p style="font-size: 0.85rem;">Tweet your high scores</p>
+                    </div>
+                    <div class="control-box" style="border-left: 3px solid #0f0;">
+                        <h4 style="color: #0f0;">Native Share</h4>
+                        <p style="font-size: 0.85rem;">Use your device's share menu</p>
+                    </div>
+                    <div class="control-box" style="border-left: 3px solid #0ff;">
+                        <h4 style="color: #0ff;">Copy Link</h4>
+                        <p style="font-size: 0.85rem;">Copy to clipboard</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3 class="neon-cyan">💰 Reward System</h3>
+                <div class="reward-box">
+                    <h4>How Rewards Work</h4>
+                    <ul>
+                        <li><strong>Score Rewards:</strong> Earn 1 nGOLD per 1,000 points</li>
+                        <li><strong>Token Collection:</strong> Each collected neon in-game = 1 nGOLD reward</li>
+                        <li><strong>Car Bonuses:</strong> Better cars provide % bonus on earnings (up to 100%)</li>
+                        <li><strong>Max Per Game:</strong> 400 nGOLD per game (800 with Legendary car)</li>
+                        <li><strong>Daily Cap:</strong> 5,000 nGOLD per player per day</li>
+                    </ul>
+                </div>
+                <div class="reward-box" style="margin-top: 1rem;">
+                    <h4>Reward Formula</h4>
+                    <p style="font-family: monospace; font-size: 0.85rem; color: #0ff;">
+                        baseReward = (score / 1000 + neonsCollected)<br>
+                        finalReward = baseReward × (100 + carBonus) / 100
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h3 class="neon-pink">🚗 Cars & Shop</h3>
+                <p>Purchase cars with ETH to unlock bonus multipliers:</p>
+                <ul>
+                    <li><strong>Starter</strong> - 0.0005 ETH - 0% bonus (Soulbound)</li>
+                    <li><strong>Speedster</strong> - 0.0033 ETH - 10% bonus</li>
+                    <li><strong>Turbo</strong> - 0.01 ETH - 25% bonus</li>
+                    <li><strong>Neon Beast</strong> - 0.022 ETH - 50% bonus</li>
+                    <li><strong>Legendary</strong> - 0.05 ETH - 100% bonus</li>
+                </ul>
+                <p style="margin-top: 1rem; font-size: 0.85rem; color: #888;">
+                    <strong>Note:</strong> Starter car is soulbound (non-transferable). Premium cars can be traded on OpenSea.
+                </p>
+            </section>
+
+            <section>
+                <h3 class="neon-cyan">⛓️ Smart Contracts</h3>
+                <p>NIFTY RACER runs on <span class="neon-cyan">Base Mainnet</span>. Key features:</p>
+                <ul>
+                    <li><strong>Direct Score Submission:</strong> No backend server required</li>
+                    <li><strong>Soulbound nGOLD:</strong> Rewards cannot be transferred (anti-bot)</li>
+                    <li><strong>NFT Cars:</strong> Premium cars tradeable on OpenSea</li>
+                    <li><strong>On-chain Leaderboard:</strong> High scores stored on blockchain</li>
+                    <li><strong>Anti-Abuse Limits:</strong> Daily caps, cooldowns, max score per game</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3 class="neon-green">🔒 Security & Anti-Cheat</h3>
+                <p>NIFTY RACER uses multiple layers of protection:</p>
+
+                <div class="reward-box" style="border-left: 3px solid #0f0;">
+                    <h4 style="color: #0f0;">Anti-Abuse Measures</h4>
+                    <ul>
+                        <li><strong>Daily Cap:</strong> Maximum 5,000 nGOLD per player per day</li>
+                        <li><strong>Game Cooldown:</strong> 60 seconds between score submissions</li>
+                        <li><strong>Score Limit:</strong> Maximum 400,000 points per game</li>
+                        <li><strong>Neon Limit:</strong> Maximum 100 neons collected per game</li>
+                        <li><strong>Wallet Freeze:</strong> Cheaters can be frozen by admin</li>
+                    </ul>
+                </div>
+
+                <div class="reward-box" style="border-left: 3px solid #0ff; margin-top: 1rem;">
+                    <h4 style="color: #0ff;">Soulbound Tokens</h4>
+                    <p style="margin-bottom: 1rem;">nGOLD tokens are <strong>soulbound</strong> (non-transferable):</p>
+                    <ul>
+                        <li><strong>Anti-Bot:</strong> Prevents farming bots from transferring to main accounts</li>
+                        <li><strong>Fair Play:</strong> Rewards stay with the player who earned them</li>
+                        <li><strong>Starter Car:</strong> Also soulbound to prevent claim-sell-reclaim exploits</li>
+                    </ul>
+                </div>
+
+                <div class="reward-box" style="border-left: 3px solid #f0f; margin-top: 1rem;">
+                    <h4 style="color: #f0f;">Contract Security</h4>
+                    <ul>
+                        <li><strong>ReentrancyGuard:</strong> Protection on all payable functions</li>
+                        <li><strong>Direct Treasury:</strong> All ETH payments go directly to treasury wallet</li>
+                        <li><strong>Mint on Demand:</strong> Rewards are minted when earned, no pool to drain</li>
+                        <li><strong>Verified Code:</strong> Contracts verified on Basescan</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h3 class="neon-yellow">📊 Contract Addresses</h3>
+                <p>Verify our contracts on Basescan:</p>
+                <div class="reward-box">
+                    <h4 style="color: #0ff; margin-bottom: 0.5rem;">Base Mainnet</h4>
+                    <ul>
+                        <li><strong>NiftyGold Token:</strong> <span style="font-family: monospace; color: #0ff; font-size: 0.9rem;">0xAcb4ba961D7Ec5dA5aC3AE5c631733A9Ca157e7c</span></li>
+                        <li><strong>NiftyCar NFT:</strong> <span style="font-family: monospace; color: #0ff; font-size: 0.9rem;">0x3B4A94cf40062bAECe4eC3bf7b129ba84c8Bbd87</span></li>
+                        <li><strong>Game Contract:</strong> <span style="font-family: monospace; color: #0ff; font-size: 0.9rem;">0x4A43e91DEF3aD1b03636810F1BFb35Aa751196c6</span></li>
+                    </ul>
+                    <p style="margin-top: 1rem; font-size: 0.85rem; color: #fff;">
+                        View on <a href="https://basescan.org" target="_blank" style="color: #0ff;">Basescan</a>
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

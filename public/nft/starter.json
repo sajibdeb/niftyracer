@@ -1,0 +1,24 @@
+{
+    "name": "NeonRacer Starter",
+    "description": "Your first ride in NeonRacer. Soulbound - cannot be traded. Perfect for beginners!",
+    "image": "ipfs://bafybeiez6walr5mz6tu2ezigofchs4xyierc7rgczckxntdxduwszaj73y",
+    "external_url": "https://niftyracer.fun",
+    "attributes": [
+        {
+            "trait_type": "Car Type",
+            "value": "Starter"
+        },
+        {
+            "trait_type": "token Bonus",
+            "value": "0%"
+        },
+        {
+            "trait_type": "Tradeable",
+            "value": "No"
+        },
+        {
+            "trait_type": "Rarity",
+            "value": "Common"
+        }
+    ]
+}

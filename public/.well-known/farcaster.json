@@ -1,0 +1,40 @@
+{
+    "accountAssociation": {
+        "header": "eyJmaWQiOjU2MDE4MiwidHlwZSI6ImF1dGgiLCJrZXkiOiIweEZERjYzYzQ4MDIyOGU1YjE3RGRjQTkwNjBmRWQwQjFjNkZGZTYzMUIifQ",
+        "payload": "eyJkb21haW4iOiJuaWZ0eXJhY2VyLmZ1biJ9",
+        "signature": "AAAAAAAAAAAAAAAAyhG94Fl3s2MRZwKIYr4qFzl2yhEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkSCrVbLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAul7REO_bo9AFv8iC11NYrLu4WEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVQ_-6NvAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA2tTS5gBLZ4LR40BM2oxDYtwmNiJEsogSa4yrT9YWYOMFVj0aVJsZSD07GwznzQebkkSFBj1RyCE71b36UJ0cyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAw-U0CzPet_5PrE-xhSAszXdpmrrhWwqMROytRWUz0BEOrSzgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABilb-MDOIPMXhBe_VwfhfY6OoaLc-lxkz5KyklkvblecjoS0XZIJJ2sM03tCfY0Spp_4I4y3dqNxGuHODC0INJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAl8ZgIay2xclZzG8RWZzuWvO8j9R0fus3XxDee9lRlVy8dAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACKeyJ0eXBlIjoid2ViYXV0aG4uZ2V0IiwiY2hhbGxlbmdlIjoiS0c5Q0hudmN6NEktVGpkRlI0bW5maG1IdzhWYkRBeDB5c3BHQTA2OTd3SSIsIm9yaWdpbiI6Imh0dHBzOi8va2V5cy5jb2luYmFzZS5jb20iLCJjcm9zc09yaWdpbiI6ZmFsc2V9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAGSSZJJkkmSSZJJkkmSSZJJkkmSSZJJkkmSSZJJkkmSS"
+    },
+    "miniapp": {
+        "version": "1",
+        "name": "Nifty Racer",
+        "subtitle": "Web3 Racing Game on Base",
+        "description": "Race through neon highways, collect NEON tokens, buy cars, and earn rewards on-chain!",
+        "iconUrl": "https://niftyracer.fun/img/logo.png",
+        "imageUrl": "https://niftyracer.fun/img/splash.png",
+        "splashImageUrl": "https://niftyracer.fun/img/splashImage.png",
+        "splashBackgroundColor": "#0d0d1a",
+        "homeUrl": "https://niftyracer.fun",
+        "webhookUrl": "https://niftyracer.fun/api/webhook",
+        "primaryCategory": "games",
+        "noindex": false,
+        "tags": [
+            "racing",
+            "web3",
+            "nft",
+            "base",
+            "neon"
+        ],
+        "screenshotUrls": [
+            "https://niftyracer.fun/img/screenshot1.png",
+            "https://niftyracer.fun/img/screenshot2.png",
+            "https://niftyracer.fun/img/screenshot3.png"
+        ],
+        "heroImageUrl": "https://niftyracer.fun/img/splashImage.png",
+        "tagline": "Race. Collect. Earn.",
+        "ogTitle": "NiftyRacer - Web3 Racing Game",
+        "ogDescription": "The ultimate Web3 racing game on Base. Race through neon highways, collect tokens, and earn rewards!",
+        "ogImageUrl": "https://niftyracer.fun/img/splashImage.png",
+        "castShareUrl": "https://niftyracer.fun",
+        "buttonTitle": "Play NiftyRacer"
+    }
+}

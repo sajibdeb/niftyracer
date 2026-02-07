@@ -1,0 +1,24 @@
+{
+    "name": "NeonRacer Neon Beast",
+    "description": "A powerful beast with 50% token bonus. Dominate the leaderboards!",
+    "image": "ipfs://bafybeifkgeftxyfeh3sqqd7kqxvh3pqkgplonylm3stkmpbys6ttyfezpy",
+    "external_url": "https://niftyracer.fun",
+    "attributes": [
+        {
+            "trait_type": "Car Type",
+            "value": "Neon Beast"
+        },
+        {
+            "trait_type": "token Bonus",
+            "value": "50%"
+        },
+        {
+            "trait_type": "Tradeable",
+            "value": "Yes"
+        },
+        {
+            "trait_type": "Rarity",
+            "value": "Epic"
+        }
+    ]
+}
